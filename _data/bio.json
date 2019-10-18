@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
+    "name": "Benedict Aryo",
+    "label": "Data Scientist",
+    "picture": "https://techfolios.github.io/template/images/aryo.png",
+    "email": "benedictusaryo@outlook.com",
     "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "website": "https://benedictusaryo.github.io",
+    "summary": "I am Data Scientist at the University of Hawaii and also Data Science Instructor at Make-AI.",
     "location": {
       "address": "",
       "postalCode": "96822",
-      "city": "Honolulu",
-      "countryCode": "USA",
-      "region": "Hawaii"
+      "city": "Jakarta",
+      "countryCode": "JKT",
+      "region": "DKI Jakarta"
     },
     "profiles": [
       {
