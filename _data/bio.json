@@ -4,7 +4,7 @@
     "label": "Data Scientist",
     "picture": "https://github.com/BenedictusAryo/benedictusaryo.github.io/raw/master/images/aryo.png",
     "email": "benedictusaryo@outlook.com",
-    "phone": "808-333-4444",
+    "phone": "benedictusaryo@outlook.com",
     "website": "https://benedictusaryo.github.io",
     "summary": "I am Data Scientist at Renom Infrastruktur Indonesia and also Educator at Make-AI.",
     "location": {
@@ -27,31 +27,34 @@
       },
       {
         "network": "twitter",
-        "username": "mollymal",
+        "username": "bennedictaryo",
         "url": "http://twitter.com/changeme"
       },
       {
         "network": "instagram",
         "username": "molly",
-        "url": "http://instagram.com/changeme"
+        "url": "http://instagram.com/bennedictaryo"
       }
     ]
   },
   "interests": [
     {
-      "name": "internet of things",
+      "name": "artificial intelligence",
       "keywords": [
-        "Arduino",
-        "TI MSP430"
+        "Machine Learning",
+        "Deep Learning"
       ]
     },
     {
-      "name": "data mining",
+      "name": "data science",
       "keywords": []
     },
     {
-      "name": "artificial intelligence",
-      "keywords": []
+      "name": "internet of things",
+      "keywords": [
+        "Arduino",
+        "Raspberry Pi"
+      ]
     }
   ],
   "skills": [
@@ -59,23 +62,19 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
+        "Bash",
         "C++",
-        "Java",
-        "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "Python"
       ]
     },
     {
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
-        "MacOS",
+        "Windows",
         "Ubuntu",
         "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "g++"
       ]
     }
   ],
