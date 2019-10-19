@@ -6,19 +6,19 @@
     "email": "benedictusaryo@outlook.com",
     "phone": "808-333-4444",
     "website": "https://benedictusaryo.github.io",
-    "summary": "I am Data Scientist at the University of Hawaii and also Data Science Instructor at Make-AI.",
+    "summary": "I am Data Scientist at Renom Infrastruktur Indonesia and also Educator at Make-AI.",
     "location": {
       "address": "",
       "postalCode": "96822",
       "city": "Jakarta",
-      "countryCode": "JKT",
+      "countryCode": "ID",
       "region": "DKI Jakarta"
     },
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "BenedictusAryo",
+        "url": "http://github.com/BenedictusAryo"
       },
       {
         "network": "linkedin",
@@ -47,13 +47,11 @@
     },
     {
       "name": "data mining",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "artificial intelligence",
-      "keywords": [
-      ]
+      "keywords": []
     }
   ],
   "skills": [
@@ -89,8 +87,7 @@
       "startDate": "2013-09-01",
       "endDate": "Present",
       "gpa": "",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
