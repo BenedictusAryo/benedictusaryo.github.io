@@ -32,8 +32,8 @@
       },
       {
         "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/bennedictaryo"
+        "username": "benedict.aryo",
+        "url": "http://instagram.com/benedict.aryo"
       }
     ]
   },
@@ -80,9 +80,9 @@
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
+      "institution": "Mercu Buana University",
+      "area": "Electrical Engineering",
+      "studyType": "S.T.",
       "startDate": "2013-09-01",
       "endDate": "Present",
       "gpa": "",
