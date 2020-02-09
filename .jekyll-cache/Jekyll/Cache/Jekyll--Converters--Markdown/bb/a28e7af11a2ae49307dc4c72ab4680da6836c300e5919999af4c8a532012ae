@@ -1,0 +1,103 @@
+I"�,<p><img class="ui image" src="../images/Medium/excel/0_panda ilustration.jpg" /></p>
+
+<p>Jika teman-teman sedang mempelajari Data Science dengan Python, pasti teman-teman sudah akrab dengan pandas. Pandas (Python for Data Analysis) yakni library atau package yang umum digunakan untuk melakukan data analisis, termasuk diantaranya adalah membaca file data seperti Excel. Artikel ini dibuat untuk teman-teman yang sedang mempelajari Data Science, khususnya Exploratory Data Analysis.</p>
+
+<p>Pada artikel ini, kita akan menggunakan data dari Badan Pusat Statistik Nasional (bps.go.id). Badan Pusat Statistik adalah Lembaga Pemerintah Non Kementerian yang menyediakan kebutuhan data bagi pemerintah dan masyarakat. Data ini didapatkan dari sensus atau survey yang dilakukan sendiri dan juga dari departemen atau lembaga pemerintahan lainnya sebagai data sekunder.</p>
+
+<p>Sebagai Latihan, kita akan menggunakan data “Rata‑Rata Pengeluaran per Kapita Sebulan di Daerah Perkotaan dan Perdesaan Menurut Provinsi dan Kelompok Barang” yang bisa teman-teman akses pada link berikut <a href="https://www.bps.go.id/statictable/2014/09/08/945/rata-rata-pengeluaran-per-kapita-sebulan-di-daerah-perkotaan-dan-perdesaan-menurut-provinsi-dan-kelompok-barang-rupiah-2011-2018.html">https://www.bps.go.id/statictable/2014/09/08/945/rata-rata-pengeluaran-per-kapita-sebulan-di-daerah-perkotaan-dan-perdesaan-menurut-provinsi-dan-kelompok-barang-rupiah-2011-2018.html</a>.</p>
+
+<p>Artikel ini menggunakan data update terakhir tanggal 08 Juli 2019. Pada halaman BPS tersebut, juga terdapat tombol untuk mengunduh file data yang berbentuk excel.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/1_bps.png" /></p>
+
+<p>Data tersebut membagi jenis pengeluaran per kapita (dalam rupiah) kedalam dua kategori, yakni Makanan dan Non makanan berikut dengan jumlahnya. Dari data tersebut kita mendapatkan data 8 tahun yakni dari tahun 2011 hingga tahun 2018. Terdapat 35 baris data yang terdiri dari 34 provinsi di Indonesia ditambah dengan Total rata-rata dari Indonesia secara keseluruhan. Apabila kita perhatikan, selain keterangan sumber data, terdapat catatan khusus, yakni “ 1) Data masih bergabung dengan Provinsi Kalimantan Timur”.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/2_catatan_kaki.png" /></p>
+
+<p>Dari data tersebut kita mengetahui bahwa data pengeluaran per kapita Provinsi Kalimantan Utara, pada tahun 2011 hingga 2014 masih bergabung dengan Provinsi Kalimantan Timur. Apabila kita telusuri di pencarian Web, Provinsi Kalimantan Utara memang merupakan Provinsi baru yang berdiri pada tahun 2013 setelah disahkan oleh Undang-undang Nomor 20 Tahun 2012.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/3_Kalimantan Utara.png" /></p>
+
+<p>Sehingga sangat wajar apabila data pengeluaran per kapita dari BPS baru terdapat pada tahun 2015. Yang menjadi masalah ialah data excel tersebut menggunakan karakter string “ - “ sebagai pengganti pada data Kalimantan Utara tahun 2011-2014 yang nantinya akan memengaruhi tipe data saat kita baca menggunakan pandas.</p>
+
+<p>Kita akan menggunakan Jupyter Notebook sebagai lembar kerja kita. Seperti pada umumnya kita terlebih dahulu mengimpor package pandas yang umumnya kita singkat dengan pd. Sedikit tambahan agar tampilan angka koma atau float format pada tabel pandas terlihat rapi, kita akan gunakan</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">'float_format'</span><span class="p">,</span> <span class="s">'{:f}'</span><span class="o">.</span><span class="nb">format</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img class="ui image" src="../images/Medium/excel/4_import_pandas.png" /></p>
+
+<p>Untuk teman-teman yang sudah pernah menggunakan pandas, tentu telah mengetahui bahwa untuk membaca excel kita dapat menggunakan fungsi <code class="highlighter-rouge">read_excel()</code> pada pandas. Namun, apabila kita gunakan langsung fungsi tersebut maka kita akan mendapatkan tampilan data yang sedikit berantakan.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/5_load_excel.png" /></p>
+
+<p>Tentunya kita harus memiliki strategi ketika membaca data excel seperti data di atas. Seperti yang terlah kita lihat pada tampilan web maupun excel ketika membaca data tersebut ada beberapa point yang dapat kita catat, yakni :</p>
+
+<ul>
+  <li>Terdapat judul data pada baris pertama.</li>
+  <li>Tabel dimulai pada baris ketiga.</li>
+  <li>Data Provinsi sebagai Index baris.</li>
+  <li>Terdapat multilevel columns dengan format “<strong>merge&amp;center</strong>”.</li>
+  <li>Data Provinsi Kalimantan Utara berisi karakter string “ - “ pada tahun 2011 -2014.</li>
+  <li>Terdapat 6 baris catatan kaki yang berjarak 1 baris setelah data.</li>
+</ul>
+
+<p><img class="ui image" src="../images/Medium/excel/6_anomali_data_1.png" /></p>
+
+<p><img class="ui image" src="../images/Medium/excel/7_anomali_data_2.png" /></p>
+
+<p>Apabila kita membaca dokumentasi pandas pada bagian keterangan fungsi <code class="highlighter-rouge">read_excel()</code> yang bisa teman-teman lihat pada link berikut  <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html</a>.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/8_pandas_load_excel_documentation.png" /></p>
+
+<p>Dari dokumentasi fungsi pandas.read_excel() tersebut kita akan menggunakan beberapa parameter tambahan untuk mengatasi permasalahan data di atas, yakni :</p>
+<ul>
+  <li><code class="highlighter-rouge">skiprows=1</code> untuk mengabaikan baris judul di data</li>
+  <li><code class="highlighter-rouge">header=[1, 2]</code> berupa list karena kita memiliki multilevel columns yakni Kategori (Makanan/NonMakanan) serta tahun data diperoleh</li>
+  <li><code class="highlighter-rouge">index_col=0</code> untuk membuat kolom Provinsi menjadi index agar lebih mudah diolah dan dilakukan analisa</li>
+  <li><code class="highlighter-rouge">skipfooter=7</code> untuk mengabaikan catatan kaki yang terdapat pada akhir baris data</li>
+</ul>
+
+<p>Dengan menggunakan parameter-parameter tersebut, kita dapat membaca tabel data excel tersebut dengan lebih rapi.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/9_read_excel_proper.png" /></p>
+
+<p>Selanjutnya adalah mengganti karakter string “ - “ pada provinsi Kalimantan Utara dengan Nilai NaN menggunakan library Numpy. Pada kasus ini, Saya pribadi menghindari mengganti karakter “ - “ tersebut dengan nilai 0, karena Seperti dijelaskan pada catatan kaki, sebelum tahun 2015 data Kalimantan Utara masih bergabung dengan data Provinsi Kalimantan Timur, namun juga tidak bisa dikatakan bahwa sebelum tahun 2015  data Provinsi Kalimantan Utara adalah sama dengan data Provinsi Kalimantan Timur karena memang Provinsi tersebut belum terbentuk. Sehingga pada kasus ini saya akan menggunakan nilai <code class="highlighter-rouge">NaN</code> (<em>Not a Number</em>) sebagai pengganti karakter string “ - “ dari data BPS tersebut.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/10_replace_strip.png" /></p>
+
+<p>Kita juga dapat mengganti nama index dari <code class="highlighter-rouge">'Kalimantan Utara 1)'</code> menjadi <code class="highlighter-rouge">'Kalimantan Utara'</code> dengan fungsi <code class="highlighter-rouge">.rename()</code> kemudian kita masukkan parameter <code class="highlighter-rouge">index={'Kalimantan Utara 1)' : 'Kalimantan Utara'}</code> yang berupa dictionary dan jangan lupa kita gunakan juga parameter <strong><code class="highlighter-rouge">inplace=True</code></strong> untuk membuat keluaran dari perintah <code class="highlighter-rouge">.rename()</code> langsung mengganti object data tabel kita.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/11_rename_Kaltara.png" /></p>
+
+<p>Kemudian kita juga harus memperhatikan datatype dari tiap tiap kolom pada tabel data kita dengan menggunakan fungsi <code class="highlighter-rouge">.info()</code></p>
+
+<p><img class="ui image" src="../images/Medium/excel/12_object_string.png" /></p>
+
+<p>Kita dapat melihat bahwa data pada tahun 2016, baik pada kategori Makanan, Nonmakanan maupun Jumlah, terbaca sebagai object string. Untuk menyelidikinya lebih lanjut, kita dapat menlihat sample data pada tahun 2016 dengan menggunakan perintah</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tabel</span><span class="p">[</span><span class="n">index_col_lvl1</span><span class="p">][</span><span class="n">index_col_lvl2</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+</code></pre></div></div>
+
+<p><img class="ui image" src="../images/Medium/excel/13_data_string.png" /></p>
+
+<p>Nah, kita kini mengetahui bahwa kemungkinan terdapat kesalahan pada <strong><em>input data</em></strong> yang mengakibatkan data pada tahun 2016 terdeteksi sebagai object string. Untuk mengatasinya kita dapat membuat fungsi berulang (<em>for loop</em>) dari setiap data pada kolom tersebut menjadi karakter angka, atau pada kasus ini kita akan menjadikannya tipe data <strong><em>float</em></strong>.</p>
+
+<p>Fungsi yang akan kita buat harus mengeluarkan <em>output</em> berupa list data yang telah berbentuk float karenanya kita membuat list kosong terlebih dahulu bernama output_list. Ada dua parameter yang dibutuhkan oleh fungsi ini, yakni tabel data dan multi kolom(Karena data kita memiliki multilevel columns) yang hendak kita rubah dari string menjadi float.</p>
+
+<p>Secara umum, ada 2 step yang kita lakukan dalam processing data ini, pertama adalah <code class="highlighter-rouge">.strip()</code> yakni menghilangkan spasi pada awal dan akhir seperti yang terlihat pada data kategori ‘Makanan’, kemudian kita gunakan fungsi <code class="highlighter-rouge">.replace()</code> yang menghilangkan spasi pada tengah-tengah angka pemisah ribuan. Perintah tersebut dilakukan berulang pada setiap baris data pada tabel kolom tersebut.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/14_function_data.png" /></p>
+
+<p>Untuk mengaplikasikan fungsi tersebut, kita dapat juga menggunakan perulangan untuk setiap kolom kategori pada tahun 2016 dengan terlebih dahulu menyimpannya kedalam sebuah list. Perulangan sebanyak tiga kali tersebut akan mengganti data pada tiap-tiap kolom dengan keluaran dari fungsi <code class="highlighter-rouge">object_to_float</code> yang telah kita buat sebelumnya.</p>
+
+<p><img class="ui image" src="../images/Medium/excel/15_string_col_list.png" /></p>
+
+<p>Setelah selesai, kita dapat melihat bahwa tipe data kita sudah berganti dengan kembali melihat dari fungsi <code class="highlighter-rouge">.info()</code></p>
+
+<p><img class="ui image" src="../images/Medium/excel/16_data_info.png" /></p>
+
+<p>Atau juga dengan melihat sample 5 baris pertama dari tabel data dengan fungsi <code class="highlighter-rouge">.head()</code></p>
+
+<p><img class="ui image" src="../images/Medium/excel/17_data_clean.png" /></p>
+
+<p>Kini data telah siap untuk teman-teman analisis. Semoga teknik yang dibahas pada artike ini dapat membantu kamu untuk mengolah data tabel terutama berupa file excel.</p>
+:ET
