@@ -6,7 +6,8 @@
     "email": "benedictusaryo@outlook.com",
     "phone": "benedictusaryo@outlook.com",
     "website": "https://benedictusaryo.github.io",
-    "summary": "I am Data Scientist at Renom Infrastruktur Indonesia and also Educator at Make-AI.",
+    "summary": "Currently Data Scientist at Renom Infrastruktur Indonesia. 
+    <br> 3 years of experience in IT & Telecommunications industries. Specializes in Delivering AI/Machine Learning Solutions to solve business problems and Deploying Analytical Solutions using Data Science and Statistical Methodology.",
     "location": {
       "address": "",
       "postalCode": "12430",
@@ -39,15 +40,22 @@
   },
   "interests": [
     {
-      "name": "artificial intelligence",
+      "name": "Data Science",
+      "keywords": ["Predictive modelling", "Analytics"]
+    },
+    {
+      "name": "Artificial Intelligence",
       "keywords": [
         "Machine Learning",
         "Deep Learning"
       ]
     },
     {
-      "name": "data science",
-      "keywords": []
+      "name": "Computer Vision",
+      "keywords": [
+        "OpenCV",
+        "OpenVINO"
+      ]
     },
     {
       "name": "internet of things",
@@ -62,9 +70,21 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "Bash",
-        "C++",
-        "Python"
+        "Python", "Pandas", "Numpy", "Matplotlib/Seaborn"
+      ]
+    },
+    {
+      "name": "AI and Machine Learning Tools",
+      "level": "",
+      "keywords": [
+        "Pytorch", "Tensorflow/Keras", "Scikit-learn"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "",
+      "keywords": [
+        "SQL", "MySQL", "PostgreSQL"
       ]
     },
     {
@@ -73,29 +93,8 @@
       "keywords": [
         "Windows",
         "Ubuntu",
-        "Git/GitHub",
-        "g++"
+        "Git/GitHub"
       ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Mercu Buana University",
-      "area": "Electrical Engineering",
-      "studyType": "S.T. ",
-      "startDate": "2016-09-01",
-      "endDate": "2018-04-01",
-      "gpa": "",
-      "courses": []
-    },
-    {
-      "institution": "Telkom Institute Technology Purwokerto",
-      "area": "Telecommunication Engineering",
-      "studyType": "A.Md. ",
-      "startDate": "2012-08-30",
-      "endDate": "2015-07-25",
-      "gpa": "",
-      "courses": []
     }
   ],
   "work": [
@@ -134,6 +133,26 @@
         "Troubleshoot software, hardware and networking issues over the phone",
         "Answer phone and email responses to the ITS Help Desk"
       ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mercu Buana University",
+      "area": "Electrical Engineering",
+      "studyType": "S.T. ",
+      "startDate": "2016-09-01",
+      "endDate": "2018-04-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Telkom Institute Technology Purwokerto",
+      "area": "Telecommunication Engineering",
+      "studyType": "A.Md. ",
+      "startDate": "2012-08-30",
+      "endDate": "2015-07-25",
+      "gpa": "",
+      "courses": []
     }
   ],
   "volunteer": [
