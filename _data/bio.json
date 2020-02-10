@@ -106,8 +106,10 @@
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Deliver AI Solutions to the customer using ReNom Machine Learning framework. <br> Provide Data Analytics solutions using predictive modelling based on customer business need.",
+        "Utilize ReNom Products such as Image Analysis, Object Detection in Computer Vision or Regression Model based on business problems.",
+        "Giving Data Science Training organized by Make-AI to individuals or corporate training. <br> Become Speaker to Universities/ Organization about Data Science, and it’s application.
+        "
       ]
     },
     {
@@ -118,8 +120,8 @@
       "endDate": "2018-09-08",
       "summary": "",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Deliver Netscout© Probing and Geoanalytic Solutions in Smartfren Telecom to solve production network issues and achieving 4G LTE KPI optimization by tackling Network Visibility challenges.",
+        "Utilize network analysis tools in large amount of data, such as Netscout Subscriber Intelligence, NGOne, or Wireshark, then finalize it with Excel to provide 4G Network Forensic Analysis for troubleshooting or Preventive maintenance."
       ]
     },
     {
@@ -130,8 +132,8 @@
       "endDate": "2016-02-01",
       "summary": "",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Perform Ad-hoc logfile analysis to produce report of sites KPI measurement. ",
+        "Perform 4G Radio Signal Drive Test to ensure network connectivity & reliability."
       ]
     }
   ],
@@ -155,45 +157,18 @@
       "courses": []
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
-    }
-  ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "Finalist of Intel OpenVINO Hackaton 2019",
+      "date": "",
+      "awarder": "Synnex Metrodata Indonesia",
+      "summary": "Deliver market ready solutions using OpenVINO AI & Computer Vision to optimize Advertising campaign."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Intel Edge AI Scholarship Foundation",
+      "date": "2019",
+      "awarder": "Udacity",
+      "summary": "Training on how to develop Edge Application"
     }
   ],
   "references": [

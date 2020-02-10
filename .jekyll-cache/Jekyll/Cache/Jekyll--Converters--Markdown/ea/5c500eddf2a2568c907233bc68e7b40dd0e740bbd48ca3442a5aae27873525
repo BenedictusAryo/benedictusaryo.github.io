@@ -1,0 +1,22 @@
+I"U<p><img class="ui image" src="../images/projects/streamlit/header.png" /></p>
+
+<p>Iris flower prediction somehow becomes the <strong><em>“Hello World”</em></strong> of Data Science &amp; Machine Learning. The simplicity of the dataset makes it undeniably very easy to use to learn Basic Classification in Machine Learning. It’s become more and more popular in Data Science and Machine Learning community.</p>
+
+<p><img class="ui medium right floated rounded image" src="../images/projects/streamlit/iris_nb.png" /></p>
+
+<p>But most of the time, the implementation of the Classifier is stopped in the Jupyter Notebook. You can use either statistical predictive modeling such as Logistic Regression and SVM, but you can also try using more complex algorithms such as Random Forest, Gradient Boosting, or even Neural Network.</p>
+
+<p>But again, the final goal of your machine learning should be the usability. The capability to reproduce and utilize the solution is mandatory in business. There are several approaches to solve this kind of situation.</p>
+
+<p>First, is by serving the Machine Learning as API microservices. This is the most popular method to put your machine learning into productions. The second choice would be delivering the ML as Graphical User Interface, either as Desktop/Mobile Apps or Web Apps.</p>
+
+<p>The simplest Web App for Data Science &amp; Machine Learning currently is <a href="https://www.streamlit.io/">Streamlit</a>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful data apps in hours, not weeks. All in pure Python. All for free.
+</code></pre></div></div>
+
+<p><img class="ui medium left floated rounded image" src="../images/projects/streamlit/inference.gif" /></p>
+
+<p>Streamlit makes the effort of creating UI Apps effortless. The built-in UI element choice is very rich, and the component rendered nicely.</p>
+
+<p>View source code: <a href="https://github.com/BenedictusAryo/ml_app_deployment"><i class="large github icon"></i>theVacay/vacay</a></p>
+:ET
