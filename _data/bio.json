@@ -7,7 +7,9 @@
     "phone": "benedictusaryo@outlook.com",
     "website": "https://benedictusaryo.github.io",
     "summary": "Currently Data Scientist at Renom Infrastruktur Indonesia. 
-    <br> 3 years of experience in IT & Telecommunications industries. Specializes in Delivering AI/Machine Learning Solutions to solve business problems and Deploying Analytical Solutions using Data Science and Statistical Methodology.",
+    <br> More than 3 years of experience in IT & Telecommunications industries. Specializes in Delivering AI/Machine Learning Solutions to solve business problems and Deploying Analytical Solutions using Data Science and Statistical Methodology.
+    <br><br> 
+    Download my <a href=\"http://bit.ly/resume_benedict-aryo\">CV/Resume in pdf</a>",
     "location": {
       "address": "",
       "postalCode": "12430",
@@ -41,7 +43,10 @@
   "interests": [
     {
       "name": "Data Science",
-      "keywords": ["Predictive modelling", "Analytics"]
+      "keywords": [
+        "Predictive modelling",
+        "Analytics"
+      ]
     },
     {
       "name": "Artificial Intelligence",
@@ -70,21 +75,28 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "Python", "Pandas", "Numpy", "Matplotlib/Seaborn"
+        "Python",
+        "Pandas",
+        "Numpy",
+        "Matplotlib/Seaborn"
       ]
     },
     {
       "name": "AI and Machine Learning Tools",
       "level": "",
       "keywords": [
-        "Pytorch", "Tensorflow/Keras", "Scikit-learn"
+        "Pytorch",
+        "Tensorflow/Keras",
+        "Scikit-learn"
       ]
     },
     {
       "name": "Database",
       "level": "",
       "keywords": [
-        "SQL", "MySQL", "PostgreSQL"
+        "SQL",
+        "MySQL",
+        "PostgreSQL"
       ]
     },
     {
